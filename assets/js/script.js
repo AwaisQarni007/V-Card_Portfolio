@@ -129,7 +129,7 @@ window.addEventListener("load", function () {
     }
     mainContent.style.visibility='visible';
     sidebar_info_more.style.visibility='visible';
-  }, 3000);
+  }, 1500);
 });
 
 // contact form variables
