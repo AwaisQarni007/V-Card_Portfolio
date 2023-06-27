@@ -127,7 +127,16 @@ window.addEventListener("load", function() {
     loader.style.display = "none";
     
     // Show the main content
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+console.log("Screen size is : ", screenWidth)
+  if (screenWidth <= 800) {
+    // Modify styles for screens less than or equal to 600 pixels
     mainContent.style.display = "inline";
+
+  } else {
+    // Revert to default styles for other screen sizes
+    mainContent.style.display = "flex";
+  }
   }, 3000);
 });
 
