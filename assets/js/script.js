@@ -114,6 +114,24 @@ for (let i = 0; i < filterBtn.length; i++) {
 }
 
 
+window.addEventListener("load", function() {
+  const loader = document.querySelector(".ring");
+  const mainContent = document.querySelector("main");
+  mainContent.style.display = "none";
+
+  // Display the loader initially
+  loader.style.display = "block";
+  
+  // Hide the loader after 3 seconds
+  setTimeout(function() {
+    loader.style.display = "none";
+    
+    // Show the main content
+    mainContent.style.display = "inline";
+  }, 3000);
+});
+
+
 
 // contact form variables
 const form = document.querySelector("[data-form]");
